@@ -638,7 +638,10 @@
     <script type="text/javascript" src="{% url "javascript-catalog" %}"></script>
     {% block extra_script %}{% endblock extra_script %}
     <script type="text/javascript">
-
+      window.addEventListener("load", function(){
+        $(".inactive").removeClass("active");
+        $(".inactive").removeClass("inactive");
+      });
       // Autocomplete instance for the search found in the header.
       $(document).ready(function() {
         window.autocomplete2 = new Autocomplete({
