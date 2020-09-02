@@ -8248,3 +8248,6 @@ form-inline {
 .iso-categories .row a:hover span {
   background-color: black;
 }
+.inactive a {
+  background-color: inherit !important;
+}
